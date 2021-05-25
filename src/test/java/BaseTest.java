@@ -25,10 +25,13 @@ public class BaseTest {
 
     }
     @Test
-    public void testLogin(){
+    public void testLogin() throws InterruptedException {
         Random rand = new Random();
         webDriver.findElements(By.cssSelector("article>nav>ul>li")).get(rand.nextInt(webDriver.findElements(By.cssSelector("article>nav>ul>li")).size())).click();
-       // System.out.println(webDriver.getCurrentUrl());
+        Random rand2 = new Random();
+        webDriver.findElements(By.cssSelector("article>nav>ul>li")).get(rand.nextInt(webDriver.findElements(By.cssSelector("article>nav>ul>li")).size())).click();
+        webDriver.findElements(By.cssSelector("div>span>a")).get(rand2.nextInt(webDriver.findElements(By.cssSelector("div>span>a")).size())).click();
+        Thread.sleep(2000);
     }
     @After
     public void tearDown(){
