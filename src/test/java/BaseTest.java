@@ -30,10 +30,12 @@ public class BaseTest {
         webDriver.findElements(By.cssSelector("article>nav>ul>li")).get(rand.nextInt(webDriver.findElements(By.cssSelector("article>nav>ul>li")).size())).click();
         webDriver.findElements(By.cssSelector("article>nav>ul>li")).get(rand.nextInt(webDriver.findElements(By.cssSelector("article>nav>ul>li")).size())).click();
         webDriver.findElements(By.cssSelector("article>nav>ul>li")).get(rand.nextInt(webDriver.findElements(By.cssSelector("article>nav>ul>li")).size())).click();
+        System.out.println("test bitiyor");
     }
     @After
     public void tearDown(){
         getWebDriver().quit();
+        System.out.println("test bitti");
     }
     public static WebDriver getWebDriver() {
 
