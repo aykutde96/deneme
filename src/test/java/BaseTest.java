@@ -14,7 +14,7 @@ public class BaseTest {
     @Before
     public void setUp() {
 
-        System.setProperty("webdriver.chrome.driver", "driver/chromedriver90.exe");
+        System.setProperty("webdriver.chrome.driver", "driver/chromedriver96.exe");
         ChromeOptions chromeOptions = new ChromeOptions();
         chromeOptions.addArguments("start-maximized");
         chromeOptions.addArguments("disable-notifications");
